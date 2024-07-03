@@ -1,4 +1,17 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+# see FEATURE AREAS in dpkg-buildflags(1)
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_LDFLAGS_MAINT_APPEND =
 
 %:
 	dh $@
+
+override_dh_auto_build:
+	sh build.sh
+
+override_dh_auto_install:
+	install -m 700 vtoydump debian/vtoydump/usr/bin/vtoydump

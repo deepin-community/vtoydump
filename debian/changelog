@@ -1,5 +1,5 @@
-template-repository (1.0-1) unstable; urgency=medium
+vtoydump (0.0.0deepin1) unstable; urgency=medium
 
-  * Initial release
+  * Initial release.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Yutao Meng <mengyutao@deepin.org>  Wed, 26 Jun 2024 11:25:07 +0800
