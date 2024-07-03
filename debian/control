@@ -1,15 +1,17 @@
-Source: template-repository
-Section: unknown
+Source: vtoydump
+Section: utils
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Yutao Meng <mengyutao@deepin.org>
+Build-Depends:
+ debhelper-compat (=13),
+Standards-Version: 4.5.0
+Homepage: https://github.com/ventoy/vtoydump
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: vtoydump
+Architecture: amd64 arm64
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: This is a tool to get ventoy status information.
+ This is a tool used with "Ventoy Compatible".
+ See https://www.ventoy.net/en/compatible.html for detail.
